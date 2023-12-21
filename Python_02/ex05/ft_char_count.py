@@ -1,10 +1,11 @@
 import sys
 
 def sort(array):
-	for j in range(0, len(array)-1):
-		for i in range(0, len(array)-1):
-			if array[i]>array[i+1]:
-				array[i], array[i+1] = array[i+1], array[i]
+	for j in array:
+		for i in [0, len(array) - 1]:
+			if (i != len(array) - 1):
+				if array[i]>array[i+1]:
+					array[i], array[i+1] = array[i+1], array[i]
 
 if (len(sys.argv) != 2):
 	print("Error! No string given or too many arguments")

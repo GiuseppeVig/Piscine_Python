@@ -10,7 +10,7 @@ x = []
 y = -1
 z = 0
 while (y != 0):
-	y = int(input("insert integer: "), 10)
+	y = int(input("insert integer: "))
 	x.append(y)
 	z += 1
 sum_list(x)

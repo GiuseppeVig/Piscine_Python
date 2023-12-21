@@ -11,8 +11,6 @@ def	my_min(elements = []):
 		i -= 1
 	print("the min is: " + str(j))
 
-
-x = float(sys.argv[1])
 i = len(sys.argv)
 if (i != 4):
 	print("Error! Usage: python3 ft_max.py <x> <y> <z>")

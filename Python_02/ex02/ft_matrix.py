@@ -8,7 +8,7 @@ def sum_rows(list):
 		for column in range(int(sys.argv[2])):
 			i += float(list[row][column])
 		print(float(i), end = "")
-		if (row + 1 != int(sys.argv[1], 10)):
+		if (row + 1 != int(sys.argv[1])):
 			print(", ", end="")
 	print("]")
 
@@ -20,7 +20,7 @@ def sum_columns(list):
 		for row in range(int(sys.argv[1])):
 			i += float(list[row][column])
 		print(float(i), end = "")
-		if (column + 1 != int(sys.argv[2], 10)):
+		if (column + 1 != int(sys.argv[2])):
 			print(", ", end="")
 	print("]")
 
@@ -38,7 +38,7 @@ else:
 		print("[ ", end = "")
 		for column in range(int(sys.argv[2])):
 			print(float(matrix[row][column]), end="")
-			if (column + 1 != int(sys.argv[2], 10)):
+			if (column + 1 != int(sys.argv[2])):
 				print(", ", end="")
 		print("]")
 	sum_rows(matrix)
